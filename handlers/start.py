@@ -20,7 +20,7 @@ from states.user import Menu
 start_router = Router()
 # **********************************************************************************************************************
 ufa_main = FSInputFile("images/menu/hi.jpg")
-ufa = FSInputFile("images/uslugi_ufa/ufaa.jpg")
+ufa = FSInputFile("images/uslugi_ufa/ufa.jpg")
 getcontact = FSInputFile("images/getcontact/getcontact.png")
 numbuster = FSInputFile("images/numbuster/numbuster.png")
 yandex_direct = FSInputFile("images/ads_yandex_direct/yandex_direct.jpg")

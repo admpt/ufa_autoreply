@@ -13,15 +13,12 @@ from dialogs import dialogs_router
 
 from config import get_bot_settings
 
-
-def signal_handler(sig: int, frame: object) -> NoReturn:
-    """Stop the bot when the signal is received."""
+def signal_handler(sig: int, frame: object) -> None:
     logging.info("Bot has stopped!")
     sys.exit(0)
 
 
 async def main() -> None:
-    """Start the bot."""
     signal.signal(signal.SIGINT, signal_handler)
     logging.basicConfig(level=logging.INFO)
 
@@ -32,12 +29,10 @@ async def main() -> None:
     dp = Dispatcher(storage=storage)
     dp.include_router(handlers_router)
     dp.include_router(dialogs_router)
-
     setup_dialogs(dp)
 
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot, allowed_updates=dp.resolve_used_update_types())
-
 
 if __name__ == "__main__":
     asyncio.run(main())
