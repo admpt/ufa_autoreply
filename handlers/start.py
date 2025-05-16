@@ -38,7 +38,7 @@ money_text = """<b>Оплата</b>\n\nВы можете оплатить усл
 other_text = """<b>Другие услуги</b>\n\nУ нас множество услуг, и они к сожалению не помещаются, полный список можно посмотреть в нашем канале с услугами и ценами, для этого нажмите кнопку "все услуги\"\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
 email_text = """<b>E-mail рассылки</b>\n\nМы более 5 лет занимаемся эффективными e-mail рассылками. Используем надежные SMTP-серверы с выделенными IP и высокой доставляемостью (до 97% писем во «Входящие»). Стабильную доставку гарантируют выделенные IP-адреса и тщательно подобранный POOL IP с безупречной репутацией. Организуем рассылку «под ключ» и при желании обучим вас всем этапам процесса — чтобы вы могли самостоятельно запускать свои кампании.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
 # **********************************************************************************************************************
-OWNER_ID = 1002592577
+OWNER_ID = 7162682842
 
 async def send_main_menu(message: Message, dialog_manager: DialogManager, state: FSMContext) -> None:
     data = await state.get_data()
@@ -109,22 +109,16 @@ async def start(message: Message, dialog_manager: DialogManager, state: FSMConte
 
 @start_router.callback_query(lambda c: c.data == "back")
 async def back_to_main(callback_query: types.CallbackQuery, dialog_manager: DialogManager, state: FSMContext) -> None:
-    print(f"[back_to_main] Callback от пользователя: {callback_query.from_user.id}")
-
     try:
         await callback_query.message.delete()
-        print("[back_to_main] Сообщение с кнопкой удалено.")
     except Exception as e:
         print(f"[back_to_main] Ошибка при удалении сообщения: {e}")
-
     await send_main_menu(callback_query.message, dialog_manager, state)
 
 
 
-# Обработчик нажатия на инлайн кнопку
 @start_router.callback_query(lambda c: c.data == "team")
 async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manager: DialogManager) -> None:
-
     builder = InlineKeyboardBuilder()
     builder.row(
         InlineKeyboardButton(
@@ -167,11 +161,8 @@ async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manag
     )
 
 
-
-
 @start_router.callback_query(lambda c: c.data == "getcontact")
 async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manager: DialogManager) -> None:
-    """Обработчик для нажатия кнопки 'Привет!'."""
     caption = getcontact_text
 
     builder = InlineKeyboardBuilder()
@@ -203,7 +194,6 @@ async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manag
 
 @start_router.callback_query(lambda c: c.data == "numbuster")
 async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manager: DialogManager) -> None:
-    """Обработчик для нажатия кнопки 'Привет!'."""
     caption = numbuster_text
 
     builder = InlineKeyboardBuilder()
@@ -235,7 +225,6 @@ async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manag
 
 @start_router.callback_query(lambda c: c.data == "yandex_direct")
 async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manager: DialogManager) -> None:
-    """Обработчик для нажатия кнопки 'Привет!'."""
     caption = yandex_direct_text
 
     builder = InlineKeyboardBuilder()
@@ -353,6 +342,8 @@ async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manag
 
 @start_router.callback_query(lambda c: c.data == "other")
 async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manager: DialogManager) -> None:
+    if callback_query.from_user.id != OWNER_ID:
+        return
     caption = other_text
 
     builder = InlineKeyboardBuilder()
@@ -383,13 +374,11 @@ async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manag
     user = callback_query.from_user
     user_mention = f"@{user.username}" if user.username else f"<code>{user.id}</code>"
 
-    # 1. Отправляем клиенту
     await callback_query.message.answer(
         text="Менеджер подойдет в ближайшее время.",
         parse_mode="HTML"
     )
 
-    # 2. Пишем боссу
     await callback_query.bot.send_message(
         BOSS_ID,
         f"Клиент {user_mention} вызывает вас!",
