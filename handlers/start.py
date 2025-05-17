@@ -32,8 +32,8 @@ other = FSInputFile("images/other/other.jpg")
 
 getcontact_text = """<b>GetContact</b>\n\nВ приложении Getcontact мы можем опубликовывать для вас теги и отзывы, именно те - которые Вы захотите, а при необходимости — полностью удалить выбранные теги или комментарии - вдруг они Вам не нравятся или же они негативного формата.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
 numbuster_text = """<b>Numbuster</b>\n\nВ приложении NumBuster мы можем повысить ваш рейтинг с помощью накрутки меток (смайликов), а также разместить для вас отзывы и теги — подробности уточняйте у нашего менеджера. При желании мы готовы удалить отдельные негативные метки, отзывы или теги. Однако стоит учитывать, что не все отзывы и теги подлежат удалению — наш менеджер подробно проконсультирует вас по этому вопросу.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
-yandex_direct_text = """<b>Яндекс Директ</b>\n\nОзнакомьтесь с актуальной стоимостью услуг по настройке контекстной рекламы в Яндексе. Все цены приведены без учета акций и специальных предложений.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
-development_text = """<b>Web Разработка</b>\n\nОзнакомьтесь с актуальной стоимостью услуг по разработке. Все цены приведены без учета акций и специальных предложений.\nИтоговая цена зависит от требований проекта и уточняется после консультации с менеджером.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
+yandex_direct_text = """<b>Яндекс Директ</b>\n\nМы профессионально занимаемся рекламой и продвигаем бизнес наших клиентов через запуск эффективных рекламных кампаний в Яндексе — как в Яндекс.Директ (РСЯ), так и посредством продвижения на Яндекс.Картах. С нами Ваш сайт получает реальный шанс выйти в ТОП выдачи и привлечь большой поток целевой аудитории. Помимо этого, мы комплексно развиваем ваши карточки на Яндекс.Картах: выделяем их среди конкурентов, обеспечиваем высокие позиции в поиске и внедряем креативные решения с грамотной SEO-оптимизацией.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
+development_text = """<b>Web Разработка</b>\n\nНаша команда ufazdes профессионально занимается разработкой сайтов любой сложности: лендингов, блогов, интернет-магазинов, сайтов-визиток. Также мы создаём чат-ботов и Telegram-ботов для автоматизации бизнес-процессов и различных задач.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
 money_text = """<b>Оплата</b>\n\nВы можете оплатить услугу любым удобным для вас способом. Перед оплатой мы отправляем индивидуальную форму заявки. Наш менеджер с удовольствием предоставит вам все необходимые инструкции и форму оплаты, адаптированную под выбранный вами вид услуги.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
 other_text = """<b>Другие услуги</b>\n\nУ нас множество услуг, и они к сожалению не помещаются, полный список можно посмотреть в нашем канале с услугами и ценами, для этого нажмите кнопку "все услуги\"\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
 email_text = """<b>E-mail рассылки</b>\n\nМы более 5 лет занимаемся эффективными e-mail рассылками. Используем надежные SMTP-серверы с выделенными IP и высокой доставляемостью (до 97% писем во «Входящие»). Стабильную доставку гарантируют выделенные IP-адреса и тщательно подобранный POOL IP с безупречной репутацией. Организуем рассылку «под ключ» и при желании обучим вас всем этапам процесса — чтобы вы могли самостоятельно запускать свои кампании.\n\n<b><a href="tg://resolve?domain=ufazdes_sale">Актуальные акции</a> <b>l</b> <a href="tg://resolve?domain=ufazdesvpn_bot">Лучший VPN</a> <b>l</b> <a href="https://ufazdes.ru/">Наш сайт</a></b>"""
@@ -109,11 +109,47 @@ async def start(message: Message, dialog_manager: DialogManager, state: FSMConte
 
 @start_router.callback_query(lambda c: c.data == "back")
 async def back_to_main(callback_query: types.CallbackQuery, dialog_manager: DialogManager, state: FSMContext) -> None:
-    try:
-        await callback_query.message.delete()
-    except Exception as e:
-        print(f"[back_to_main] Ошибка при удалении сообщения: {e}")
-    await send_main_menu(callback_query.message, dialog_manager, state)
+    message = callback_query.message
+    bot = callback_query.bot
+
+    current_message_id = message.message_id
+    business_connection_id = getattr(message, "business_connection_id", None)
+
+    print(f"[DEBUG] message_id: {current_message_id}")
+    print(f"[DEBUG] business_connection_id: {business_connection_id}")
+
+    # 1. Пытаемся удалить текущее сообщение (кнопка "Вернуться")
+    if business_connection_id:
+        try:
+            await bot.delete_business_messages(
+                business_connection_id=business_connection_id,
+                message_ids=[current_message_id]
+            )
+            print("[DEBUG] Удалено текущее сообщение с кнопкой 'Вернуться'")
+        except Exception as e:
+            print(f"[ERROR] Не удалось удалить текущее сообщение: {e}")
+    else:
+        try:
+            await message.delete()
+        except Exception as e:
+            print(f"[ERROR] Не удалось удалить обычным способом: {e}")
+
+    data = await state.get_data()
+    previous_message_id = data.get("previous_message_id")
+    if previous_message_id and business_connection_id:
+        try:
+            await bot.delete_business_messages(
+                business_connection_id=business_connection_id,
+                message_ids=[previous_message_id]
+            )
+            print(f"[DEBUG] Удалено предыдущее меню: {previous_message_id}")
+        except Exception as e:
+            print(f"[ERROR] Не удалось удалить предыдущее меню: {e}")
+
+    await state.update_data(previous_message_id=None)
+
+    await send_main_menu(message, dialog_manager, state)
+
 
 
 
@@ -342,8 +378,6 @@ async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manag
 
 @start_router.callback_query(lambda c: c.data == "other")
 async def greet_button_pressed(callback_query: types.CallbackQuery, dialog_manager: DialogManager) -> None:
-    if callback_query.from_user.id != OWNER_ID:
-        return
     caption = other_text
 
     builder = InlineKeyboardBuilder()
